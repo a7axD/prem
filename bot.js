@@ -609,8 +609,8 @@ message.channel.send(`** ${men.username}, :credit_card: balance` + " is `" + `${
 if(message.content.startsWith(prefix + "daily")) {
 
 
-  if(profile[message.author.id].lastDaily != moment().format('day')) {
-   profile[message.author.id].lastDaily = moment().format('day')
+  if(profile[message.author.id].lastDaily != moment().format('second')) {
+   profile[message.author.id].lastDaily = moment().format('second')
    profile[message.author.id].credits += 310
     message.channel.send(`:atm: |**${message.author.username} you collect your \`310\` :yen: daily credits!**`)
 } else {
